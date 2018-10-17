@@ -1,0 +1,26 @@
+package pp_four_one;
+
+public class Die
+{
+	private int side = 0;
+	private int num_sides = 0;
+	
+	int face;
+	
+	public void Die(int sides)
+	{
+		num_sides = sides;
+		roll();
+	}
+	public void roll()
+	{
+		side = (int) (Math.random() * num_sides);
+	}
+	
+	public int toReturn()
+	{
+		int result = side;
+		
+		return result;
+	}
+}
